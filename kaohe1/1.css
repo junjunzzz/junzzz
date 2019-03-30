@@ -1,0 +1,471 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+}
+             /*清除body与topbar的间隙   清除body自带属性 */
+ a{
+    text-decoration: none;
+    color: aliceblue;
+} 
+                /*清除所有连接下的斜线*/
+.topbar{
+  background-color: rgb(61, 61,61);
+   /*border:1px solid black;*/
+    height: 35px;
+
+}       /*  第一部分 内容:电话邮箱登陆等   设置背景颜色及高度*/
+.container{
+   /*border:1px solid green;*/
+    margin: 0 auto;
+    width:1150px;
+   color: blue;
+   line-height: 30px;
+}
+     
+.zhuce a:hover{
+    color:blue;
+    
+}
+      
+.container i {
+    font-size: 20px;
+    color:rgb(27, 161, 157);
+  
+}  
+            /*iconfont 的图标 阿里巴巴矢量图库*/
+.xinxi,.hy{ 
+    float: left;
+    /*text-align: center;*/
+   
+}
+.hy1 {
+  position: absolute;
+   left: 710px;
+   line-height: 35px;
+   font-size: 22px;
+}
+.xinxi a {
+    /*border:1px solid black;*/
+}
+.zhuce{
+    float:right;
+    /*height:20px; */
+    /*line-height: 20px;*/
+   }
+.hy a{
+   /* border:1px solid black;*/
+     
+}
+/*  
+.container::before,.container::after{
+    content: "";
+    display: table;
+    
+}
+.container::after{
+    clear: both;
+}  */
+/*清理浮动带来的问题    */
+
+
+                                /*第二部分 热泉港*/
+
+.header {
+       height: 101px;
+      /* border: 1px solid red;*/
+      
+   }
+
+.kk{
+    
+    margin: 0 auto;
+    width:1330px;
+    height: 100px;
+  /* border: 1px solid black;*/
+   }            /*整个容器大小及居中*/
+
+.logo {
+       float: left;
+       height: 80px;
+       width: 80px;
+      /* border: 1px solid black;*/
+   }
+.logo a {
+        display:block;
+        height: 80px;
+        width: 80px;
+       background: url('logo3.gif');
+      
+       /* background-position:*/
+}
+.wengzi{
+
+       float: left;
+       line-height: 50px;
+       font-size: 50px;
+
+   }
+.shengming {
+      
+    font-size: 20px;
+}
+.nav{
+       float: right;
+       height: 100px;
+       width: 750px;
+      /* border: 1px solid black;*/
+       font-size: 28px;
+      line-height: 100px;
+       text-align: center;
+}
+
+.nav a:hover{
+      color:rgb(27, 161, 157);
+}
+.nav a{
+    
+    color: black;
+    height: 100px;
+    width: 500px;
+    margin-right: 10px;
+  
+  /* border: 1px solid black;*/
+ 
+    /*line-height: 100px;*/
+   /*text-align: center;*/
+}
+
+
+                    /*第三部分  背景图部分*/
+.head-search {
+    position: relative;
+   height: 375px;
+   background-image: url("beijing.png");
+ 
+   /* border: 1px solid black;*/
+}
+/*背景*/
+
+.search-block {
+       position: absolute;
+       top: 215px;
+       left: 360px;
+        width: 665px;
+        height: 150px;
+   /*  border: 1px solid black;*/
+}
+/*边框*/
+/*二维码弹窗*/
+.tangcuan  {
+    position: fixed;
+    bottom: 196px;
+    right: 0;/*位置*/
+     width:87px;
+   height:98px;/*大小*/
+ /* border: 1px solid black;*/
+}
+
+.weixin  img.qrcode{
+   position: absolute;/*二维码标签定位*/
+   z-index:99;
+  top:-100px;
+ right:100px;
+   width: 200px;/*二维码宽度*/
+   max-width: none;
+   height:200px;/*二维码高度*/
+
+   transform: scale(0);
+   transform-origin:  bottom right ;
+   opacity: 0;
+   border: .3125rem solid black;
+   border-radius: 25px;
+
+   -webkit-transform: all .4s ease-in-out;
+   -o-translation: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+}
+.weixin:hover img.qrcode  {
+   transform: scale(1);
+   opacity: 1;
+}
+/*每一个搜索大小*/
+.search-block .search-form1 {
+    position: relative;
+    display: block;
+     height: 60px;
+     width: 660px;
+   /* border: 1px solid red;*/
+     
+    
+}
+.search-block .search-form2 {
+    position: relative;
+    display: block;
+     height: 60px;
+     width: 660px;
+    /* border: 1px solid red;*/
+     
+}
+
+.search-block .search-form1 .search-but1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 60px;
+    outline: 0;
+    background:rgb(27, 161, 157);
+    color:white;
+   /* border: 1px solid red;*/
+    line-height: 30px;
+    font-size: 17px;
+
+}
+.search-block .search-form1 .search-but1:hover, .search-block .search-form2 .search-but2:hover  {
+    color: black;
+}
+.search-block .search-form1 .search-text1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 560px;
+    height: 60px;
+    outline: 0; 
+    line-height: 30px;
+    color:blanchedalmond;
+
+}
+
+.search-block .search-form2 .search-but2 {
+     position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 60px;
+    outline: 0;
+    background:rgb(27, 161, 157);
+    color:white;
+    /*border: 1px solid red;*/
+    line-height: 30px;
+    font-size: 17px;
+
+}
+.search-block .search-form2 .search-text2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 560px;
+    height: 60px;
+    outline: 0; 
+    line-height: 30px;
+    color:blanchedalmond;
+}
+.search-block-text {
+      color: aliceblue;
+      height: 25px;
+     padding-top:5px;
+      /*border: 1px solid red;*/
+}
+
+/*更多资讯部分*/
+.part4 {
+    position: relative;
+}
+.zai {
+    position: fixed;
+   bottom:97px;
+    right: 0px;
+    width: 87px;
+    height: 97px;
+   /* border: 1px solid black;*/
+    
+}
+.hui {
+    position: fixed;
+  bottom:0px;
+    right: 0;
+    width: 87px;
+    height: 98px;
+   /* border: 1px solid red;*/
+    
+}
+.zixun {
+    height: 70px;
+   /* border: 1px solid red;*/
+   position: relative;
+    
+}
+
+.zixun p {
+    position: absolute;
+    top: 5px;
+    left: 600px;
+   /* border: 1px solid red;*/
+    display:inline-block;
+    font-size: 30px;
+    color: rgb(27, 161, 157);
+
+}
+.container4 {
+    /*border: 1px solid red;*/
+    height: 350px;
+    position: relative;
+}
+/*清除ul自带有外边距*/
+ul {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ .part4-li{
+   
+ position: absolute;
+ top: 0px;
+left: 140px;
+    
+} 
+.part4-li li {
+display:block;
+width: 160px;
+height: 50px;
+border:2px solid rgb(198,198, 198);
+ font-size: 20px; 
+text-align: center;
+line-height: 50px;
+/* padding-top: 20px; */
+background: rgb(61, 61, 61);
+color: aliceblue;
+
+
+} 
+.part4-li .active {
+    
+     background: white;
+     color: black;
+}
+.infm {
+    position: absolute;
+    height: 310px;
+    width: 925px;
+  border:2px solid rgb(198,198, 198);
+    left: 300px;
+
+} 
+
+ .infm li {
+   
+    float: left;
+    width: 415px;
+    height: 120px;
+   /* border:1px solid black; */
+    margin-left: 35px;
+    margin-top: 20px;
+  
+}  
+.infm ul.active{
+    display: block;
+}
+.infm ul {
+    display: none;
+ 
+}
+/*先让无class=active的ul 消失*/
+
+div.tu {
+    float: left;
+    width:165px;
+    height: 120px;
+   /* border:1px solid red;*/
+   
+}
+
+
+ div.tu img {
+    width:165px;
+    height: 120px;
+} 
+div.weng { 
+    position: relative;
+    float: left;
+   /* border:1px solid red;*/
+    width:245px;
+    height: 120px;
+}
+
+div.weng a{
+    position: absolute;
+    bottom: 0;
+    right: 0 ;
+    color: rgb(27, 161, 157);
+    font-size: 10px;
+}
+/*最后一部分*/
+.endbox  {
+    position: relative;
+}
+.end {    
+    position: absolute;
+    left: 160px;
+    width: 1060px;
+    height: 170px;
+    border:2px solid black;
+    margin: 0 auto;
+    border-bottom-style:none;
+    border-left-style:none;
+    border-right-style:none;
+}
+
+.end li { 
+    
+   /* border:1px solid red;*/
+    width:265px;
+    height: 84px;
+   float: left;
+}
+.b {
+    background:rgb(61, 61, 61);
+    color: aliceblue;
+}
+ 
+ div.end-tu  {
+   width: 40px;
+   height: 84px;
+   /*border:1px solid black;*/
+   float: left;
+}
+div.end-weng {
+    width: 220px;
+    height: 84px;
+    float: left;
+    /*border:1px solid black;*/
+}  
+
+div.end-tu img {
+    width: 40px;
+    height: 84px;
+
+}
+.end .end-weng .zi {
+    font-size: 22px;
+    margin-top: 0px;
+      /*  border:1px solid black;*/
+}
+
+.end .end-weng .ziti {
+    font-size: 12px;
+    margin-top: 0px;
+    /*border:1px solid black;*/
+    color: rgb(209, 209, 209);
+} 
+
+.end .end-weng p {
+    margin: 0;
+    padding: 0;
+}
